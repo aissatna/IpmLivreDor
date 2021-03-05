@@ -1,0 +1,44 @@
+
+html,
+body{
+    background-color: linen;
+    font-size: 15px;
+    font-family: 'Lato' ,sans-serif;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 65px;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+#container_form{
+    font-size: 16px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+input[type=text],
+textarea {
+    width: 80%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+div{
+    margin: 5px; 
+}
+.msg_erreur{
+    color: red;
+}
+.msg_info{
+    color: orange;
+ }
+
+table, th, td {
+  border: 1px solid black;
+}
+ 

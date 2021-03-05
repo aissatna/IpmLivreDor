@@ -125,10 +125,10 @@ public class MessageDorDao {
         try  (PreparedStatement st = Conx.prepareStatement(sql)) {
             st.setString(1, msg.getPseudo());
             st.setString(2, msg.getTexte());
-            st.setInt(1, msg.getNumMsg());
+            st.setInt(3, msg.getNumMsg());
             st.executeUpdate();
         } catch (SQLException sqle) {
-            throw new Exception("Exception deleteMessages() - " + sqle.getMessage());
+            throw new Exception("Exception updateMessage() - " + sqle.getMessage());
         }
     }
 //---- Programme de test -------

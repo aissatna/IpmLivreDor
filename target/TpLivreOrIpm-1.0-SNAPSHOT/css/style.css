@@ -1,43 +1,61 @@
 
 html,
 body{
-    background-color: linen;
-    font-size: 15px;
-    font-family: 'Lato' ,sans-serif;
+    /*background-color: linen;*/
+    font-size: 18px;
+    font-family: system-ui ,serif;
+    color: #555555;
+    font-weight: 300;
+  
 }
-.heading{
+/*-----------------HEADINGS--------------------*/
+.header{
     text-align: center;
-    margin-bottom: 65px;
+    margin: 20px 0;
+        
 }
-h2{
+h1 { 
+    font-weight: 300;
     text-transform: uppercase;
-    font-weight: bold;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+}
+h1:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 30px auto 0;
+}
+/*-----------------LOGOS--------------------*/
+.logo-ipm,
+.logo-univ{
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.logo-ipm{
+    float: left;
+}
+.logo-univ {
+   float: right;
+}
+/*-----------------BUTTONS--------------------*/
+.btn{
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 350;
+    background-color: #fff;
     
 }
-
-#container_form{
-    font-size: 16px;
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
+.btn:hover{
+    background-color: #4b7bec
+    
 }
-input[type=text],
-textarea {
-    width: 80%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #cccccc;
-}
-div{
-    margin: 5px; 
-}
-.msg_erreur{
-    color: red;
-}
-.msg_info{
-    color: orange;
- }
-
 table, th, td {
   border: 1px solid black;
 }

@@ -37,7 +37,7 @@ public class CtrlSupprimer extends HttpServlet {
             HttpSession  sessionCbMsgIds = request.getSession(true);
             sessionCbMsgIds.setAttribute("cbMsgIds", cbMsgIds);
             request.getRequestDispatcher("ConfirmationSupp").forward(request, response);
-            System.out.println("size cbMsgId "+cbMsgIds.length);
+            
                
         }else{
           //revenir a la jsp supprimer 
